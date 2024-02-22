@@ -2,7 +2,7 @@ public class No {
     private final String nome;
     private double valorFuncaoG;
     private final double valorFuncaoH;
-    private final double valorFuncaoF = 0;
+    private double valorFuncaoF = 0;
     private Aresta[] adjacentes;
     private No adjacente;
 
@@ -29,6 +29,10 @@ public class No {
 
     public double getValorFuncaoF() {
         return valorFuncaoF;
+    }
+
+    public void setValorFuncaoF(double funcaoFTemp) {
+        this.valorFuncaoF = funcaoFTemp;
     }
 
     public Aresta[] getAdjacentes() {
